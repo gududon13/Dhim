@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="crop window"
+		android:textSize="23dp"
+		android:textColor="#000000"/>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:adjustViewBounds="true"
+			android:background="#000000"
+			android:scaleType="centerCrop"
+			android:id="@+id/cropimage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:layout_margin="8dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:backgroundTint="#000000"
+				android:textColor="#FFFFFF"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Cancel"
+				android:id="@+id/cropcancel"/>
+
+			<Button
+				android:backgroundTint="#000000"
+				android:textColor="#FFFFFF"
+				android:id="@+id/cropdone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="done"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>
+
